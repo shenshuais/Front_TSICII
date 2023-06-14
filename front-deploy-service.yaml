@@ -30,9 +30,9 @@ spec:
     spec:
       containers:
       - name: react-docker
-        image: docker.io/shuaishen/frontdonto:08
+        image: docker.io/sergiogm1/frontend:latest
         ports:
         - containerPort: 3000
         env:
           - name: REACT_APP_API
-            value: "http://192.168.0.16:32000"
+            value: "http://192.168.231.129:32000"
