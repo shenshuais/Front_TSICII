@@ -8,7 +8,9 @@ WORKDIR /app
 COPY package*.json ./
 
 # Instala las dependencias
-RUN npm install, npm audit fix --force
+RUN npm install
+
+RUN npm audit fix --force
 
 # Copia los archivos del proyecto al directorio de trabajo del contenedor
 COPY . .
